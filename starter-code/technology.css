@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+margin:0;
+padding:0;
+}
+/* root elements */
+:root{
+    --belle :'Bellefair', serif;
+    --barcond :'Barlow Condensed', sans-serif;
+    --dark-blue:2301deg,35%,7%;
+    --light-blue:231deg,77% ,90%;
+    --white:0,0,100%  
+}
+body{
+   
+    font-family:var(--barcond);
+    background-color:#ffc;
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+    color: #fff;
+    background-size: cover;
+}
+
+/* utility classs */
+.header-1{
+    font-family:var(--belle);
+    font-size:150px;
+}
+.header-2{
+    font-family:var(--belle);
+    font-size:100px;
+}
+.header-3{
+    font-family:var(--belle);
+    font-size:56px;
+}
+.header-4{
+    font-family:var(--belle);
+    font-size:32px;
+}
+.header-5{
+    font-family:var(--barcond);
+    font-size:28px;
+    letter-spacing:4.75px ;
+}
+.sub-heading{
+    font-family:var(--barcond);
+    font-size:18px;
+    letter-spacing:2.35px;
+}
+.para{
+    font-family:var(--barcond);
+    font-size:20px;
+}
+.captalize{
+    text-transform: uppercase;
+}
+.nav-text{
+    font-family:var(--barcond);
+    font-size:16px;
+    letter-spacing:2.7px;
+}
+.link-active{position: absolute;
+    color: rgb(127, 127, 127);
+   border-bottom:3px solid rgb(251, 250, 253) ;  
+
+  
+}
+.link-anc{ position: relative;
+    color: rgb(127, 127, 127);
+}
+.link-anc:hover{
+  color: rgb(194, 192, 192);
+  border-bottom:3px solid rgb(95, 92, 104) ;  
+}
+.thin-line{
+    height: 2px;
+    width: 17.8rem;
+    background-color:#ffc;
+}
+.nav-list>li>a{
+    color: #fff;
+}
+
+.add{
+    background:hsl(230deg,35%,100%,.03);
+    font-size: 20px;
+    letter-spacing: 1.8;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(.8rem);
+}
+
+.crew-title-header{
+    color: rgb(203, 199, 199);
+    font-weight:300;
+}
+.number{
+    color:rgb(113, 112, 112);
+    font-weight:800;
+}
+.crew-section{
+    padding:3% 3% 0 3%;
+}
+.crew-containt{position: relative;
+    padding:0 10% 0;
+}
+.crew-info{
+    padding:19% 0 0;
+}
+.content-spac{
+    margin-top: 12rem;
+}
+.circle{display: grid;
+    place-items: center;
+background-color:transparent;
+height: 50px;
+width: 50px;
+border-radius:100%;
+border:1px solid white;
+color: #fff;
+font-weight: 400;
+font-size: 20px;
+font-family:var(--belle);  
+}
+
+.active-circle{
+background-color:#fff;
+color:#1b1b23;
+font-weight: 800;
+}
+.circle:hover{
+border: 3px solid white;
+font-weight: 800;
+transition: inset .3s ease-out;
+
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+margin:0;
+padding:0;
+}
+/* root elements */
+:root{
+    --belle :'Bellefair', serif;
+    --barcond :'Barlow Condensed', sans-serif;
+    --dark-blue:2301deg,35%,7%;
+    --light-blue:231deg,77% ,90%;
+    --white:0deg,0%,100%  
+}
+
+/* utility classs */
+.header-1{
+    font-family:var(--belle);
+    font-size:150px;
+}
+.header-2{
+    font-family:var(--belle);
+    font-size:100px;
+}
+.header-3{
+    font-family:var(--belle);
+    font-size:56px;
+}
+.header-4{
+    font-family:var(--belle);
+    font-size:32px;
+}
+.header-5{
+    font-family:var(--barcond);
+    font-size:28px;
+    letter-spacing:4.75px ;
+}
+.para{
+    font-family:var(--barcond);
+    font-size:20px;
+}
+.captalize{
+    text-transform: uppercase;
+}
+
+
+/* interective elements  */
+/* texted navbar */
+.nav-text{
+    font-family:var(--barcond);
+    font-size:16px;
+    letter-spacing:3.7px;
+    color:black;
+    font-weight:800;
+}
+.link-anc{
+    color: rgb(127, 127, 127);
+}
+.link-anc:hover{
+  
+    color: rgb(194, 192, 192);
+  border-bottom:3px solid rgb(95, 92, 104) ;  
+  padding-bottom:2.2rem;
+  transition: all 300ms ease-in-out;
+}
+.number{
+    color: rgb(254, 254, 255);
+    font-size:18px;
+    font-weight: bold;
+}
+.intarctive{position: relative;
+    align-items: baseline;
+    margin-top: 3rem;
+    background-color: #1b1b23;
+    height: 7rem;
+    transition: all 400ms ease-in-out;
+}
+body{
+    padding: 10% 3%;
+    background-color:hsl(230deg,35%,7%);
+}
+.link-active{
+     color: rgb(127, 127, 127);
+    border-bottom:3px solid rgb(251, 250, 253) ;  
+    padding-bottom:2.29rem;
+   
+}
+
+
+/* dot navbar */
+.dots{
+    height: 25px;
+    width: 25px;
+    background-color:rgb(44, 44, 44);
+    border-radius: 50%;
+}
+.dot-active{
+    background-color:aliceblue;
+}
+.dots:hover{
+    background-color:rgb(151, 153, 156);
+    transition: all 200ms ease-in-out;
+}
+
+
+/* circle navbar vertical  */
+
+.circle{display: grid;
+        place-items: center;
+    background-color:transparent;
+    height: 100px;
+    width: 100px;
+    border-radius:100%;
+    border:1px solid white;
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+    font-family:var(--belle);  
+}
+
+.active-circle{
+    background-color:#fff;
+    color:#1b1b23;
+    font-weight: 800;
+}
+.circle:hover{
+    border: 3px solid white;
+    font-weight: 800;
+    transition: inset .3s ease-out;
+    
+}
+
+
+
+/* hovered big button */
+.explore{
+    position: relative;
+    display: grid;
+    color: black;
+    place-items: center;
+    background-color:#fff;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    font-family:var(--belle);
+    font-size:30px;
+    letter-spacing:3.5px;
+    margin:10rem auto;
+}
+.explore::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background:hsl(230deg,35%,100%,.2);
+    height: 250px;
+    width: 250px; 
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+.explore:hover::after,
+.explore:focus::after{
+    transform: scale(1.4);
+}

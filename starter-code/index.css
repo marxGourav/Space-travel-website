@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+margin:0;
+padding:0;
+}
+/* root elements */
+:root{
+    --belle :'Bellefair', serif;
+    --barcond :'Barlow Condensed', sans-serif;
+    --dark-blue:2301deg,35%,7%;
+    --light-blue:231deg,77% ,90%;
+    --white:0,0,100%  
+}
+/* utility classs */
+.header-1{
+    font-family:var(--belle);
+    font-size:150px;
+}
+.header-2{
+    font-family:var(--belle);
+    font-size:100px;
+}
+.header-3{
+    font-family:var(--belle);
+    font-size:56px;
+}
+.header-4{
+    font-family:var(--belle);
+    font-size:32px;
+}
+.header-5{
+    font-family:var(--barcond);
+    font-size:28px;
+    letter-spacing:4.75px ;
+}
+.para{
+    font-family:var(--barcond);
+    font-size:20px;
+}
+.captalize{
+    text-transform: uppercase;
+}
+.nav-text{
+    font-family:var(--barcond);
+    font-size:16px;
+    letter-spacing:2.7px;
+}
+
+body{
+   
+    font-family:var(--barcond);
+    background-color:#ffc;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.thin-line{
+    height: 2px;
+    width: 17.8rem;
+    background-color:#ffc;
+}
+.nav-list>li>a{
+    color: #fff;
+}
+.home-section{
+    padding:3% 3%;
+}
+.home-containt{
+    padding:15% 10% 0;
+}
+.add{
+    background:hsl(230deg,35%,100%,.03);
+    font-size: 20px;
+    letter-spacing: 1.8;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(.8rem);
+}
+.explore{
+    position:relative;
+    color: black;
+    background-color:#fff;
+    height: 250px;
+    width: 250px;
+   margin: 0 auto;
+   display: grid;
+   align-items: center;
+   text-align: center;
+   border-radius: 50%;
+   bottom:0;
+   font-family:var(--belle);
+   font-size:30px;
+   letter-spacing:3.5px;
+}
+.explore::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background:hsl(230deg,35%,100%,.2);
+    height: 250px;
+    width: 250px; 
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+.explore:hover::after,
+.explore:focus::after{
+    transform: scale(1.4);
+}
+
+
+/* mobile mode (potrait mode) */
+@media only screen 
+and (max-width :600px)
+{
+    body{text-align: center;
+        background-image:url(assets/home/background-home-mobile.jpg);
+    }
+    
+    .header-1{
+        font-size: 76px;
+    }
+    .header-5{
+        font-size: 18px;
+    }
+    .para{
+        font-size: 16px;
+    }
+}
+/* tablet potrait mode  */
+@media only screen 
+and (min-device-width :768px)
+
+{
+body{ text-align: center;
+    background-image: url(assets/home/background-home-tablet.jpg);
+}
+.add{ font-size: 16px;
+    letter-spacing: 1.8;
+    padding: 1rem 0.3rem;
+    
+}
+.thin-line{
+    display:none;
+}
+.home-img{
+    padding-top: 5rem;
+}    
+}
+@media only screen 
+and (min-width :1024px){
+    
+    .header-5{
+        font-family:var(--barcond);
+        font-size:28px;
+        letter-spacing:4.75px ;
+    }
+    .para{
+        font-family:var(--barcond);
+        font-size:20px;
+    }
+    .captalize{
+        text-transform: uppercase;
+    }
+    .nav-text{
+        font-family:var(--barcond);
+        font-size:16px;
+        letter-spacing:2.7px;
+    }
+    
+    body{
+       
+        font-family:var(--barcond);
+        background-color:#ffc;
+        background-image: url(./assets/home/background-home-desktop.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+    .thin-line{display: flow-root;
+        height: 2px;
+        width: 17.8rem;
+        background-color:#ffc;
+    }
+    .add{
+        background:hsl(230deg,35%,100%,.03);
+        font-size: 20px;
+        letter-spacing: 1.8;
+        padding: 1rem 2rem;
+        backdrop-filter: blur(.8rem);
+    }
+}
+
+
+
